@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 23: end of line expected.
-    show Hyuga Sad.png
-                  ^
+File "game/script.rpy", line 65: expected 'image_name_component' not found.
+    hide scene street_autumn_day
+        ^
 
-Ren'Py Version: Ren'Py 8.0.2.22081402
-Thu Sep  1 21:11:50 2022
+Ren'Py Version: Ren'Py 8.0.3.22090602
+Thu Sep  8 21:16:02 2022
