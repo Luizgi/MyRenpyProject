@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 65: expected 'image_name_component' not found.
-    hide scene street_autumn_day
-        ^
+File "game/script.rpy", line 131: end of line expected.
+    hide ramura angry, hyuga angry
+                     ^
 
 Ren'Py Version: Ren'Py 8.0.3.22090602
-Thu Sep  8 21:16:02 2022
+Mon Sep 12 21:12:59 2022

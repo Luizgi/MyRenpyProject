@@ -8,6 +8,9 @@ define n = Character("Narrador")
 define d = Character("Voz Desconhecida")
 define m = Character ("Maki")
 define s = Character ("Senhorita Morello")
+define r = Character ("Ramura")
+define k = Character ("Diretor Kaio")
+define mult = Character ("Os dois")
 
 # The game starts here.
 
@@ -52,7 +55,7 @@ label start:
     show maki normal at left
     show hyuga laugh at right
     h "So whats up my friend"
-    h "Tell me everything abouy your travel"
+    h "Tell me everything about your travel"
     m "Você sabia que o seu inglês é péssimo"
     h "Tá falando isso por pura inveja"
     hide maki normal
@@ -78,11 +81,68 @@ label cena2:
     show srta morello angry
     s "Caro Hyuga, sente na sua carteira agora ou irei te dar falta imediatamente"
     s "Logo no primeiro dia de aula??"
+    hide srta morello angry
+
+    show ramura angry
+    r "Ei, imbecíl, sai da minha frente"
+    hide ramura angry
+
+    show hyuga angry
+    h "Não estou te atrapalhando, otário"
+    hide hyuga angry
+
+    show ramura angry
+    r "Você quer partir para briga então seu babaca?"
+    hide ramura angry
+
+    n "Então, lhes apresento a mais inovadora da tecníca de jogos: O poder de escolha"
+    n "Aqui você poderá decidir o futuro do nosso personagem"
+    n "Mas, tome cuidado, toda ação..."
+    n "Tem reação"
+
+
 
     menu:
-        "Iniciar":
-            jump start
-        "Cena2":
-            jump cena2
+        "Bater em Ramura":
+            jump opt1
+        "Ficar na sua":
+            jump opt2
+label opt1:
+    show srta morello angry
+    s "Ei, vocês dois, vão para a diretoria..."
+    s "A....GO....RA"
+    hide srta morello angry
+
+    scene sitting_room
+    with dissolve
+
+    show director_kaio
+    k "Ei vocês"
+    k "O que estão fazendo aqui no horário da minha massagem espiritual, com pepino do mar, e folhas de bananeira?"
+    hide director_kaio
+
+    show ramura angry at right
+    show hyuga angry at left
+    r "Esse idiota tentou me bater"
+    h "Eu só fiz isso porque você implicou comigo"
+    h "Mas eu não iria bater mesmo"
+    h "Quer saber, você é muito molenga mesmo"
+    r "Tá vendo diretor, esse pedaço de bosta começou a briga, eu não tenho nada a ver com isso"
+    r "Eu nem conheço ele na verdade"
+    hide ramura angry
+    hide hyuga angry
+
+    show director kaio angry
+    k "Ei, vocês dois"
+    k "Eu não quero saber quem começou, ou quem terminou, vocês tem que saber, que essa é uma escola de respeito"
+    k "Quero que vocês dois peçam desculpa um para o outro"
+
+    show ramura surprised at right
+    show hyuga surprised at left
+    mult "Desculpa"
 
     return
+
+label opt2:
+    show hyuga smirk
+    h "Até parece que eu bateria em alguem como você, não merece meu tempo"
