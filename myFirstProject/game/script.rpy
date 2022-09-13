@@ -140,6 +140,10 @@ label opt1:
     show ramura surprised at right
     show hyuga surprised at left
     mult "Desculpa"
+    hide ramura surprised
+    hide hyuga surprised
+    show director_kaio
+    k "Agora... Você Ramura, terá uma suspensão de 15 dia" 
 
     return
 
