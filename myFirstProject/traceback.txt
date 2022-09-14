@@ -1,22 +1,22 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/script.rpy", line 27, in script
-    e "You've created a new Ren'Py game."
-Exception: Sayer 'e' is not defined.
+  File "game/script.rpy", line 166, in script
+    K "SO"
+Exception: Sayer 'K' is not defined.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/script.rpy", line 27, in script
-    e "You've created a new Ren'Py game."
-  File "C:\Users\Noturno\Downloads\renpy-8.0.2-sdk\renpy\ast.py", line 881, in execute
+  File "game/script.rpy", line 166, in script
+    K "SO"
+  File "C:\Program Files (x86)\renpy-8.0.3-sdk\renpy\ast.py", line 881, in execute
     who = eval_who(self.who, self.who_fast)
-  File "C:\Users\Noturno\Downloads\renpy-8.0.2-sdk\renpy\ast.py", line 774, in eval_who
+  File "C:\Program Files (x86)\renpy-8.0.3-sdk\renpy\ast.py", line 774, in eval_who
     raise Exception("Sayer '%s' is not defined." % who)
-Exception: Sayer 'e' is not defined.
+Exception: Sayer 'K' is not defined.
 
 Windows-10-10.0.19041 AMD64
-Ren'Py 8.0.2.22081402
+Ren'Py 8.0.3.22083102
 myFirstProject 1.0
-Thu Sep  1 21:09:14 2022
+Wed Sep 14 15:30:05 2022

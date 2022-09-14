@@ -11,6 +11,9 @@ define s = Character ("Senhorita Morello")
 define r = Character ("Ramura")
 define k = Character ("Diretor Kaio")
 define mult = Character ("Os dois")
+define hm = Character ("Na mente de Hyuga")
+define t = Character ("Toki")
+define mm = Character ("Kenma")
 
 # The game starts here.
 
@@ -136,21 +139,106 @@ label opt1:
     k "Ei, vocês dois"
     k "Eu não quero saber quem começou, ou quem terminou, vocês tem que saber, que essa é uma escola de respeito"
     k "Quero que vocês dois peçam desculpa um para o outro"
+    hide director kaio angry
 
-    show ramura surprised at right
+    show ramura angry at right
     show hyuga surprised at left
     mult "Desculpa"
-    hide ramura surprised
+    hide ramura angry
     hide hyuga surprised
+
     show director_kaio
     k "Agora... Você Ramura, terá uma suspensão de 15 dia"
     hide director_kaio
-    show ramura surprised
+
+    show ramura angry
     r "Mas Diretor, eu não fi..."
-    hide ramura surprised
+    hide ramura angry
     show director_kaio
     k "Shiu garoto, não viu que eu estou falando"
-    k "E você "
+    k "E você...Qual é o seu nome mesmo?"
+    hide director_kaio
+    show hyuga surprised
+    h "Hyuga..."
+    hide hyuga surprised
+    show director_kaio
+    k "Isso, isso, Hyuga..."
+    k "Obrigado Samuca"
+    k "Enfim, voltando ao assunto"
+    k "Você terá 25 dias de suspensão, não é a primeira vez que você toma uma ocorrência"
+    k "Então, na próxima vez que precisar chamar sua atenção "
+    k "Você será EX-"
+    k "PUL-"
+    k "SO"
+    hide director_kaio
+
+    scene galaxy
+    show hyuga surprised
+    hm "Meu"
+    hm "Deus"
+    hm "A minha mãe vai me matar"
+    hm "O que será que eu vou fazer"
+    hm "Na próxima semana vai ter prova"
+    hm "Eu vou perder a prova"
+    hm "A minha mãe vai me matar"
+    hide hyuga surprised
+    show hyuga smirk
+    hm "Já sei"
+    hm "Eu vou fugir de casa"
+    hide hyuga smirk
+    show hyuga surprised
+    hm "Mas e a Maki?!"
+    hm "Mas e minha irmã Toki"
+
+    d "Hyuga?"
+    d "Hyuga???"
+    d "Hyuga????????"
+
+    scene livingroom_night
+    show hyuga sad
+    h "Oi mamãe"
+    hide hyuga sad
+
+    show momma
+    mm "Como foi o dia na escola?"
+    hide momma
+    show hyuga sad
+    h "Sabe o que é mãe"
+    hide hyuga sad
+    show toki
+    t "Iiih, tá namorando"
+    hide toki
+    show hyuga sad
+    h "Quem me dera"
+    hide hyuga sad
+    show toki2
+    t "O que aconteceu então?"
+    hide toki2
+    show momma
+    mm "O que aconteceu então?"
+    hide momma
+    show hyuga sad
+    h "Eu fui suspenso por um mês"
+    hide hyuga sad
+    show momma piss
+    mm "Como é que é?"
+    mm "VOCÊ CONSEGUIU SER SUSPENSO NA PRIMEIRA SEMANA DE AULA DESSE BIMESTRE???"
+    mm "EU NÃO QUERO MAIS SABER DE NADA"
+    mm "VOCÊ VAI MUDAR DE ESCOLA, E VAI PARA A MESMA ESCOLA QUE SUA IRMÃ"
+    hide momma piss
+    show toki
+    t "haha"
+
+    scene galaxy
+    n "Tá vendo...?"
+    n "Eu disse para você, tudo tem consequência! Que tal voltar na ultima decisão?"
+menu:
+    "Sim":
+        jump cena2
+    "Não":
+        jump End
+label End:
+    n "Então, esse é o final!"
 
     return
 
