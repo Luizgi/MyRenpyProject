@@ -143,7 +143,14 @@ label opt1:
     hide ramura surprised
     hide hyuga surprised
     show director_kaio
-    k "Agora... Você Ramura, terá uma suspensão de 15 dia" 
+    k "Agora... Você Ramura, terá uma suspensão de 15 dia"
+    hide director_kaio
+    show ramura surprised
+    r "Mas Diretor, eu não fi..."
+    hide ramura surprised
+    show director_kaio
+    k "Shiu garoto, não viu que eu estou falando"
+    k "E você "
 
     return
 
