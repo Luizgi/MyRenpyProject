@@ -245,3 +245,11 @@ label End:
 label opt2:
     show hyuga smirk
     h "Até parece que eu bateria em alguem como você, não merece meu tempo"
+    hide hyuga smirk
+
+    scene school_hallway_day
+    show maki happy
+    m "Eiii Hyugaa"
+    hide maki happy
+    show hyuga normal
+    h "Ei Maki"
