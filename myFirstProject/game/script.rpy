@@ -240,6 +240,7 @@ menu:
 label End:
     n "Então, esse é o final!"
 
+
     return
 
 label opt2:
@@ -251,5 +252,86 @@ label opt2:
     show maki happy
     m "Eiii Hyugaa"
     hide maki happy
-    show hyuga normal
+    show hyuga smirk
     h "Ei Maki"
+    h "Você viu o Ramura, tentando brigar comigo"
+    h "Até parece que eu ia brigar com ele, olha meu porte físico, eu provavelmente seria amassado pro ele"
+    h "Eu nunca fiz nenhum esporte, sou fraco, olha meu braço"
+    hide hyuga smirk
+    show maki normal
+    m "Para com isso Hyuga"
+    m "Você realmente é bem fraco"
+    m "Provavelmente perderia mesmo, perderia até pra mim"
+    hide maki normal
+    
+    scene galaxy
+    show hyuga sad
+    hm "A muito tempo eu tô querendo contar para Maki"
+    hm "Desde o ensino fundamental eu tô segurando meu segredo"
+    hm "Já sei, e se eu contasse para ela agora?"
+    hide hyuga sad
+
+menu:
+    "Contar para Maki":
+        jump End2
+    "Manter o segredo":
+        jump End3
+
+label End2:
+    scene school_hallway_day
+    show hyuga smirk
+    h "Você sabe que..."
+    h "Desde o ano passado eu venho esperando para te contar isso"
+    h "A verdade é que..."
+    hide hyuga smirk 
+    show maki normal
+    m "Conta logo, você é muito lerdo"
+    hide maki normal
+    show hyuga smirk
+    h "Tá bom, ta bom"
+    h "É que..."
+    d "Hyugaaaa, vamos para casa"
+    hide hyuga smirk
+
+    show momma at right
+    mm "Ei, Maki, quanto tempo"
+    show maki normal at left
+    m "Ei Senhorita Ken"
+    m "Quanto tempo"
+    mm "Sim, muito tempo mesmo!!Por onde você tava?"
+    m "Ahh, eu fui para California"
+    mm "Hmm, que chique"
+    d "Maki, vamos para casa"
+    m "Eu vou para casa agora"
+    mm "Ok, Makizinha, até uma próxima"
+    mm "Foi um prazer te ver denovo"
+    m "Igualmente"
+    hide momma
+    show hyuga sad at right
+    h "Hã, tchau Maki"
+    m "Tchau, Hyuga, amanhã você me conta o que tinha para dizer"
+    m "Confesso que fiquei um pouco curiosa"
+    scene galaxy
+    n "Viu?! "
+    n "Nem sempre aquilo que você almeja, vai dar certo"
+    n "Desde o início isso foi uma grande piada"
+    n "Espero que fiquem bravo com isso"
+
+    return
+label End3:
+    scene school_hallway_day
+    d "Makii, vamos para casa"
+    show maki normal
+    m "Você queria dizer alguma coisa ??"
+    hide maki normal
+    show hyuga sad
+    h "Na realidade não"
+    hide hyuga sad
+    show maki normal
+    m "Ah, ok então"
+    m "Até amanhã viu, tchauzinho"
+    hide maki normal
+    scene galaxy
+    n "Acabou"
+    n "Sério, era só isso mesmo"
+    return
